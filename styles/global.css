@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 11px;
+}
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+    margin: 0;
+}
+
+@layer base {
+    .containerWidth {
+        width: calc(100% - 25vw);
+        margin:0 auto ;
+    }
+    h1 {
+        font-weight: 400;
+        font-size: 3.75rem;
+        line-height: 1.1;
+        font-family: Ubuntu, sans-serif;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-weight: 400;
+        font-size: 2.25rem;
+        line-height: 1.1;
+        font-family: Ubuntu, sans-serif;
+        text-transform: uppercase;
+        padding: 10px 0; 
+    }
+    h4 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        font-family: Ubuntu, sans-serif;
+        text-transform: uppercase;
+    }
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        white-space: nowrap;
+        user-select: none;
+        text-align: center;
+        font-family: Ubuntu, sans-serif;
+        font-size: 0.875rem;
+        padding: 10px 30px;
+        background-color: #d4d6e0;
+        color:black;
+    }
+   
+    i{
+        font-size:2.25rem;
+    }
+
+    .bg_blue {
+        background-color: #5fd7cb;
+    }
+    .bg_violet {
+        background-color: #52576c;
+    }
+    .bg_black {
+        background-color: #303030;
+    }
+}
+
+@layer components {
+    .Hero {
+       min-height: 90vh;
+    }
+
+    .decor {
+        background-color: #5fd7cb;
+        width:100px ; 
+        height:15px ;
+    }
+
+    .Banner2{
+        min-height:50vh;
+    }
+
+    .input_border{
+        border:1px solid #b3b3b3; 
+    }
+  
+}
